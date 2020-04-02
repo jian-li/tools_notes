@@ -45,6 +45,7 @@ git config --global https.proxy 'socks5://127.0.0.1:1080'
 ```
 或者更加方便的：
 ```
+git clone -c http.proxy=socks5://127.0.0.1:1080 http://xxxx
 ```
 ##wget使用socks5代理
 下载tsocks工具，命令如下：

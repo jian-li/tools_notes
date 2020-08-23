@@ -75,3 +75,9 @@ server_port = 1080
 ```
 tsocks wget -c https://xxxxxx
 ```
+
+## socks5转http和https
+这里使用的工具是goproxy,下载的方法为：
+```
+git clone https://github.com/elazarl/goproxy
+```

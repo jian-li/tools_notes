@@ -1,4 +1,11 @@
 ## 代理的设置
+
+## 代理的设置 
+已经配置好了`kcp`和`ssr`工具的启动脚本，只需要安装好环境就好。
+```
+sudo apt install shadowsocks
+```
+
 ## ubuntu下配置v2ray
 ```
 curl -L -s https://install.direct/go.sh > go.sh

@@ -1,12 +1,12 @@
 ## 代理的设置
-
-## 代理的设置 
+[TOC]
+## ubuntu下使用kcp代理的设置 
 已经配置好了`kcp`和`ssr`工具的启动脚本，只需要安装好环境就好。
 ```
 sudo apt install shadowsocks
 ```
 
-## ubuntu下配置v2ray
+## ubuntu下使用v2ray代理的配置
 ```
 curl -L -s https://install.direct/go.sh > go.sh
 sudo bash go.sh
@@ -43,6 +43,12 @@ vim /etc/v2ray/config.json
 ```
 sudo systemctl start v2ray.service
 sudo systemctl status v2ray.service
+```
+## pip下载仓库的时候使用proxy
+首先下载`pysocks`工具，然后在下载代码的时候使用`pysocks`代理。
+```
+sudo pip install pysocks
+pip install <yourpacakge> --proxy socks5:127.0.0.1:1080
 ```
 
 ## 下载代码的时候使用proxy

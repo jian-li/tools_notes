@@ -81,3 +81,9 @@ tsocks wget -c https://xxxxxx
 ```
 git clone https://github.com/elazarl/goproxy
 ```
+
+## conda下载使用socks5 proxy
+```
+conda config --set proxy_servers.http socks5://127.0.0.1:1080
+conda config --set proxy_servers.https socks5://127.0.0.1:1080
+```

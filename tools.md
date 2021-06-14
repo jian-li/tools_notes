@@ -10,3 +10,6 @@ chsh -s /bin/zsh
 ```
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 ```
+
+## `gpu`风扇自动控制
+https://www.techticity.com/howto/how-to-control-nvidia-graphics-card-fan-speed-in-linux/

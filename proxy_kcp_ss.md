@@ -65,6 +65,7 @@ docker run -p 20001:20001 -p 20001:20001/udp -v /kcptun:/kcptun -d --restart=alw
     "autoexpire":60
 }
 ```
+【注意】上面的`vps_ip`需要修改成实际的`vps`的`ip`地址。
 这是’shadowsocks`的配置文件：
 ```
 {

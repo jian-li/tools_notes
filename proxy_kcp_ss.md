@@ -40,7 +40,7 @@ docker run -p 20001:20001 -p 20001:20001/udp -v /kcptun:/kcptun -d --restart=alw
 ```
 其中`target`的`x.x.x.x`是`vps`的`ip`地址。
 
-### 客户端配置
+# 客户端配置
 ## `mac`下配置
 `mac`端的配置用的是`Shadowsocks-NG`，
 配置如下所示：
@@ -53,6 +53,26 @@ docker run -p 20001:20001 -p 20001:20001/udp -v /kcptun:/kcptun -d --restart=alw
 
 
 ## `ubuntu`下配置
-
-
-
+这里先贴下两个配置文件，`shadowsocks`和`kcptun`的配置文件：
+这是`kcptun`的配置文件：
+```
+{
+    "localaddr":":20002",
+    "remoteaddr":"vps_ip:20001",
+    "key":"qazwsxedc",
+    "crypt":"aes-192",
+    "mode":"fast3",
+    "autoexpire":60
+}
+```
+这是’shadowsocks`的配置文件：
+```
+{
+"server":"127.0.0.1",
+"server_port":20002,
+"local_port":1080,
+"password":"12345",
+"method":"aes-256-cfb"
+}
+```
+【注意】`ubuntu`和`windows`的配置方式基本一样。

@@ -9,7 +9,7 @@
 sudo apt-get install -y install docker-ce
 systemctl start docker
 ```
-### 服务器端配置
+# 服务器端配置
 ## 安装`shadowsocks`
 ```
 docker pull shadowsocks/shadowsocks-libev

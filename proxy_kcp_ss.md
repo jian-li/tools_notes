@@ -48,6 +48,8 @@ docker run -p 20001:20001 -p 20001:20001/udp -v /kcptun:/kcptun -d --restart=alw
 其中:
 - 1是`shadowsocks`的配置参数，其中，`Port`需要使用`kcptun`映射之后的端口。
 - `kcptun`的配置参数和`config.json`文件里面的一样。
+- 可以再`Shadowsoks-NG`里面配置`http`代理，如下图所示，勾选【HTTP Proxy Enable】和【Set HTTP proxy to system proxy configure in global mode】
+![mac上Ss-NG配置http连接](imgs/shadowsocks-ng.png)
 
 ## `windows`下配置
 

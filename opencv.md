@@ -1,5 +1,6 @@
 # `opencv`编译遇到的那些坑
 ## `opencv_contrib`编译失败
+在`opencv_contrib/modules/xfeatures2d/src`目录下：
 ```
 
 curl https://raw.githubusercontent.com/cbalint13/opencv-dlco/master/workspace/opencv/vgg_generated_120.i > vgg_generated_120.i -x http://127.0.0.1:1088

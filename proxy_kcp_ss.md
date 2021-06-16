@@ -80,6 +80,10 @@ docker run -p 20001:20001 -p 20001:20001/udp -v /kcptun:/kcptun -d --restart=alw
 ```
 【注意】`ubuntu`和`windows`的配置方式基本一样。
 
+直接使用`http`和`https`代理的方式：
+下载`shadowsocks-qt5`，配置好相关参数，选择`http(s)`的代理方式。
+设置全局代理中的`http`和`https`为`shadowsocks-qt5`的端口。
+
 TODO:
 - 增加网速的测试，确认下是否所有的协议速度都足够快（目前测试感觉http好像不是很快）
 - 增加`http`加速的功能

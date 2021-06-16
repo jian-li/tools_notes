@@ -51,14 +51,22 @@ sudo pip install pysocks
 pip install <yourpacakge> --proxy socks5:127.0.0.1:1080
 ```
 
-## 下载代码的时候使用proxy
+## 下载代码的时候使用`proxy`
 ```
+# 配置socks5代理
 git config --global http.proxy 'socks5://127.0.0.1:1080'
 git config --global https.proxy 'socks5://127.0.0.1:1080'
+# 配置http和https代理
+git config --global http.proxy 'http://127.0.0.1:1088'
+git config --global https.proxy 'https://127.0.0.1:1088'
 ```
 或者更加方便的：
 ```
+# 使用socks5代理
 git clone -c http.proxy=socks5://127.0.0.1:1080 http://xxxx
+# 使用http和https代理
+git clone -c http.proxy=http://127.0.01:1080 http://xxx
+git clone -c https.proxy=https://127.0.01:1080 http://xxx
 ```
 ##wget使用socks5代理
 下载tsocks工具，命令如下：
